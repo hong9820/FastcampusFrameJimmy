@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 //! Project version number for FastcampusFrameJimmy.
+//꼭 headerfile -> Public에 있어야함. import하면 project에 들어있기 때문
+
 FOUNDATION_EXPORT double FastcampusFrameJimmyVersionNumber;
 
 //! Project version string for FastcampusFrameJimmy.

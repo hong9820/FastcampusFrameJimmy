@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		FD84B59D1E8BCBDC0087A80C /* FastcampusFrameJimmy.h in Headers */ = {isa = PBXBuildFile; fileRef = FD84B59B1E8BCBDC0087A80C /* FastcampusFrameJimmy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD84B5A41E8BCFA80087A80C /* FastcampusFrameJimmy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD84B5A31E8BCFA80087A80C /* FastcampusFrameJimmy.swift */; };
+		FD84B5AC1E8BD0990087A80C /* FastcampusFrameJimmyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD84B5AB1E8BD0990087A80C /* FastcampusFrameJimmyTests.swift */; };
+		FD84B5AE1E8BD0990087A80C /* FastcampusFrameJimmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD84B5981E8BCBDC0087A80C /* FastcampusFrameJimmy.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD84B5AF1E8BD0990087A80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD84B58F1E8BCBDC0087A80C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD84B5971E8BCBDC0087A80C;
+			remoteInfo = FastcampusFrameJimmy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FD84B5981E8BCBDC0087A80C /* FastcampusFrameJimmy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastcampusFrameJimmy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD84B59B1E8BCBDC0087A80C /* FastcampusFrameJimmy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastcampusFrameJimmy.h; sourceTree = "<group>"; };
 		FD84B59C1E8BCBDC0087A80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD84B5A31E8BCFA80087A80C /* FastcampusFrameJimmy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastcampusFrameJimmy.swift; sourceTree = "<group>"; };
+		FD84B5A91E8BD0990087A80C /* FastcampusFrameJimmyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastcampusFrameJimmyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD84B5AB1E8BD0990087A80C /* FastcampusFrameJimmyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastcampusFrameJimmyTests.swift; sourceTree = "<group>"; };
+		FD84B5AD1E8BD0990087A80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD84B5A61E8BD0990087A80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD84B5AE1E8BD0990087A80C /* FastcampusFrameJimmy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				FD84B59A1E8BCBDC0087A80C /* FastcampusFrameJimmy */,
+				FD84B5AA1E8BD0990087A80C /* FastcampusFrameJimmyTests */,
 				FD84B5991E8BCBDC0087A80C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				FD84B5981E8BCBDC0087A80C /* FastcampusFrameJimmy.framework */,
+				FD84B5A91E8BD0990087A80C /* FastcampusFrameJimmyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +74,19 @@
 			isa = PBXGroup;
 			children = (
 				FD84B59B1E8BCBDC0087A80C /* FastcampusFrameJimmy.h */,
+				FD84B5A31E8BCFA80087A80C /* FastcampusFrameJimmy.swift */,
 				FD84B59C1E8BCBDC0087A80C /* Info.plist */,
 			);
 			path = FastcampusFrameJimmy;
+			sourceTree = "<group>";
+		};
+		FD84B5AA1E8BD0990087A80C /* FastcampusFrameJimmyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD84B5AB1E8BD0990087A80C /* FastcampusFrameJimmyTests.swift */,
+				FD84B5AD1E8BD0990087A80C /* Info.plist */,
+			);
+			path = FastcampusFrameJimmyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,40 @@
 			productReference = FD84B5981E8BCBDC0087A80C /* FastcampusFrameJimmy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		FD84B5A81E8BD0990087A80C /* FastcampusFrameJimmyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD84B5B11E8BD0990087A80C /* Build configuration list for PBXNativeTarget "FastcampusFrameJimmyTests" */;
+			buildPhases = (
+				FD84B5A51E8BD0990087A80C /* Sources */,
+				FD84B5A61E8BD0990087A80C /* Frameworks */,
+				FD84B5A71E8BD0990087A80C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD84B5B01E8BD0990087A80C /* PBXTargetDependency */,
+			);
+			name = FastcampusFrameJimmyTests;
+			productName = FastcampusFrameJimmyTests;
+			productReference = FD84B5A91E8BD0990087A80C /* FastcampusFrameJimmyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FD84B58F1E8BCBDC0087A80C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Jimmy;
 				TargetAttributes = {
 					FD84B5971E8BCBDC0087A80C = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					FD84B5A81E8BD0990087A80C = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -112,12 +173,20 @@
 			projectRoot = "";
 			targets = (
 				FD84B5971E8BCBDC0087A80C /* FastcampusFrameJimmy */,
+				FD84B5A81E8BD0990087A80C /* FastcampusFrameJimmyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FD84B5961E8BCBDC0087A80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD84B5A71E8BD0990087A80C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +200,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD84B5A41E8BCFA80087A80C /* FastcampusFrameJimmy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD84B5A51E8BD0990087A80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD84B5AC1E8BD0990087A80C /* FastcampusFrameJimmyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD84B5B01E8BD0990087A80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD84B5971E8BCBDC0087A80C /* FastcampusFrameJimmy */;
+			targetProxy = FD84B5AF1E8BD0990087A80C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FD84B59E1E8BCBDC0087A80C /* Debug */ = {
@@ -239,6 +325,27 @@
 		FD84B5A11E8BCBDC0087A80C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FastcampusFrameJimmy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HUINNO.FastcampusFrameJimmy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FD84B5A21E8BCBDC0087A80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,22 +359,26 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		FD84B5A21E8BCBDC0087A80C /* Release */ = {
+		FD84B5B21E8BD0990087A80C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FastcampusFrameJimmy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = FastcampusFrameJimmyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HUINNO.FastcampusFrameJimmy;
+				PRODUCT_BUNDLE_IDENTIFIER = HUINNO.FastcampusFrameJimmyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FD84B5B31E8BD0990087A80C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastcampusFrameJimmyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HUINNO.FastcampusFrameJimmyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +400,14 @@
 			buildConfigurations = (
 				FD84B5A11E8BCBDC0087A80C /* Debug */,
 				FD84B5A21E8BCBDC0087A80C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD84B5B11E8BD0990087A80C /* Build configuration list for PBXNativeTarget "FastcampusFrameJimmyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD84B5B21E8BD0990087A80C /* Debug */,
+				FD84B5B31E8BD0990087A80C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
