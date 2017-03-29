@@ -2,4 +2,15 @@ language: objective-c
 osx_image: xcode8
 sudo: false
 
+before_install:
+  - gem install bundler
+
+install: 
+  - pod install
+
+#before_script:
+#  - 
+
+script: 
+  - xcodebuild clean build test -project FastcampusFrameJimmy.xcodeproj -scheme FastcampusFrameJimmy -destination "platform=iOS Simulator,name=iPhone 7,OS=10.2"
 
