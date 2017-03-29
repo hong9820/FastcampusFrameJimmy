@@ -1,1 +1,1 @@
- 1 # FastcampusFrameJimmy
+# FastcampusFrameJimmy
